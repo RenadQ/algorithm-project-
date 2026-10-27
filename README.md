@@ -87,6 +87,25 @@ For each run, the code reports the path found, the execution time, the memory us
 
 **Conclusion:** BFS always found the shortest path. DFS was sometimes faster, but it often returned longer paths. For shortest-path problems on unweighted graphs, BFS is the right choice. DFS fits better when any valid path is enough or memory is limited.
 
+## 📝 Research paper: BFS vs DFS
+
+The phase 2 work was extended into an IEEE-style research paper, [**"Comparative Analysis between BFS and DFS: Shortest Path Algorithms"**](docs/bfs-vs-dfs-research-paper.pdf) (2025). It tested both algorithms on 10 random graphs, from 10 to 1,000 vertices, and counted how many nodes each path contains.
+
+| Graph | Vertices | Edges | Start → End | BFS path nodes | DFS path nodes |
+|---|---|---|---|---|---|
+| 1 | 10 | 20 | 4 → 5 | **3** | 4 |
+| 2 | 50 | 100 | 44 → 1 | **5** | 11 |
+| 3 | 100 | 200 | 37 → 67 | **4** | 12 |
+| 4 | 200 | 1,000 | 199 → 70 | **4** | 12 |
+| 5 | 300 | 3,000 | 90 → 140 | **4** | 7 |
+| 6 | 500 | 5,000 | 348 → 37 | **4** | 56 |
+| 7 | 600 | 700 | 123 → 426 | **8** | 21 |
+| 8 | 700 | 8,000 | 114 → 662 | **3** | 25 |
+| 9 | 800 | 500 | 179 → 510 | **4** | 33 |
+| 10 | 1,000 | 8,000 | 672 → 781 | **3** | 102 |
+
+BFS found the shortest path in every graph. DFS paths grew much longer as the graphs grew, reaching 102 nodes against BFS's 3 on the largest graph.
+
 ## ▶️ Run the code
 
 ```bash
@@ -106,7 +125,8 @@ The number of vertices and edges can be changed at the bottom of each script.
 ```
 .
 ├── docs/
-│   └── phase2-shortest-path-report.pdf   # Full report: theory, pseudocode, complexity tables, results
+│   ├── phase2-shortest-path-report.pdf   # Full report: theory, pseudocode, complexity tables, results
+│   └── bfs-vs-dfs-research-paper.pdf     # IEEE-style research paper on BFS vs DFS
 ├── phase1-sorting/
 │   ├── results/
 │   │   ├── sorting_times.csv             # All timings (best / worst / average)
@@ -133,5 +153,5 @@ The number of vertices and edges can be changed at the bottom of each script.
 
 **١. الترتيب:** قارنّا بين Selection Sort وQuick Sort (من عائلة فرّق تسد) على بيانات مرتبة، ومرتبة بالعكس، وعشوائية، بأحجام من ١٠ آلاف إلى ٥٠ ألف عنصر. عند ٥٠ ألف عنصر كان Quick Sort أسرع بحوالي ١٠٠٠ مرة. ولما يتضاعف حجم البيانات يتضاعف وقت Selection Sort تقريباً ٤ مرات، وهذا يطابق O(n²).
 
-**٢. أقصر مسار:** قارنّا بين BFS وDFS لإيجاد أقصر مسار في رسم بياني غير موزون، على رسوم عشوائية بحروف وأرقام. BFS يلقى أقصر مسار دايماً. DFS أحياناً أسرع، بس يرجّع مسارات أطول.
+**٢. أقصر مسار:** قارنّا بين BFS وDFS لإيجاد أقصر مسار في رسم بياني غير موزون، على رسوم عشوائية بحروف وأرقام، وكتبنا عنها ورقة بحثية بصيغة IEEE. BFS يلقى أقصر مسار دايماً. DFS أحياناً أسرع، بس يرجّع مسارات أطول.
 </details>
