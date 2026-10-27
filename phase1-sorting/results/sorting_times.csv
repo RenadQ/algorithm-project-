@@ -1,0 +1,31 @@
+algorithm,input_type,n,best_case_s,worst_case_s,average_case_s
+Selection Sort,Ordered,10000,4.948,4.9329,4.6203
+Selection Sort,Ordered,20000,19.1312,21.9837,20.4337
+Selection Sort,Ordered,30000,43.6209,42.4065,41.9957
+Selection Sort,Ordered,40000,74.8244,78.1334,78.7625
+Selection Sort,Ordered,50000,116.8916,118.1812,119.681
+Selection Sort,Reverse ordered,10000,5.0038,4.9841,4.9495
+Selection Sort,Reverse ordered,20000,19.72,20.0005,20.1426
+Selection Sort,Reverse ordered,30000,44.5924,43.5616,42.2674
+Selection Sort,Reverse ordered,40000,80.7281,95.7012,81.734
+Selection Sort,Reverse ordered,50000,123.2654,126.3797,120.4319
+Selection Sort,Uniform random,1000,0.0736,0.0527,0.0531
+Selection Sort,Uniform random,20000,19.8025,20.1281,19.8986
+Selection Sort,Uniform random,30000,44.4244,45.4389,44.3165
+Selection Sort,Uniform random,40000,77.4138,80.2304,77.2778
+Selection Sort,Uniform random,50000,116.811,120.8262,153.4611
+Quick Sort,Ordered,10000,0.0107,0.0112,0.0143
+Quick Sort,Ordered,20000,0.0225,0.0258,0.0334
+Quick Sort,Ordered,30000,0.0341,0.0362,0.0491
+Quick Sort,Ordered,40000,0.0462,0.0501,0.0656
+Quick Sort,Ordered,50000,0.0605,0.06,0.0995
+Quick Sort,Reverse ordered,10000,0.0114,0.011,0.017
+Quick Sort,Reverse ordered,20000,0.0228,0.0235,0.0387
+Quick Sort,Reverse ordered,30000,0.0362,0.0349,0.052
+Quick Sort,Reverse ordered,40000,0.05,0.0543,0.0694
+Quick Sort,Reverse ordered,50000,0.0668,0.0661,0.1053
+Quick Sort,Uniform random,1000,0.0013,0.001,0.0013
+Quick Sort,Uniform random,20000,0.0249,0.0235,0.035
+Quick Sort,Uniform random,30000,0.0392,0.0381,0.0556
+Quick Sort,Uniform random,40000,0.051,0.0488,0.0669
+Quick Sort,Uniform random,50000,0.0623,0.0621,0.182
